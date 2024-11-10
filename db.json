@@ -41,6 +41,60 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "lillies",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardenexpress.com.au%2Fproduct%2Flilium-la-hybrid-mixed%2F&psig=AOvVaw2bcspQWy84ygIJ2vz328I2&ust=1731355030239000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCDoaDG0okDFQAAAAAdAAAAABAE",
+      "price": "50",
+      "id": 8
+    },
+    {
+      "name": "lillies",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardenexpress.com.au%2Fproduct%2Flilium-la-hybrid-mixed%2F&psig=AOvVaw2bcspQWy84ygIJ2vz328I2&ust=1731355030239000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCDoaDG0okDFQAAAAAdAAAAABAE",
+      "price": "50",
+      "id": 9
+    },
+    {
+      "name": "lillies",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardenexpress.com.au%2Fproduct%2Flilium-la-hybrid-mixed%2F&psig=AOvVaw2bcspQWy84ygIJ2vz328I2&ust=1731355030239000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCDoaDG0okDFQAAAAAdAAAAABAE",
+      "price": "50",
+      "id": 10
+    },
+    {
+      "name": "lillies",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardenexpress.com.au%2Fproduct%2Flilium-la-hybrid-mixed%2F&psig=AOvVaw2bcspQWy84ygIJ2vz328I2&ust=1731355030239000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCDoaDG0okDFQAAAAAdAAAAABAE",
+      "price": "50",
+      "id": 11
+    },
+    {
+      "name": "lillies",
+      "image": "./images/aloe.jpg",
+      "price": "50",
+      "id": 12
+    },
+    {
+      "name": "LIly",
+      "image": "./images/aloe.jpg",
+      "price": "10",
+      "id": 13
+    },
+    {
+      "name": "LIly",
+      "image": "./images/aloe.jpg",
+      "price": "10",
+      "id": 14
+    },
+    {
+      "name": "LIly",
+      "image": "./images/aloe.jpg",
+      "price": "10",
+      "id": 15
+    },
+    {
+      "name": "LIly",
+      "image": "./images/aloe.jpg",
+      "price": "10",
+      "id": 16
     }
   ]
 }
