@@ -6,12 +6,11 @@ function PlantList({plants}) {
   return (
     <ul className="cards">
       {plants.length > 0?plants.map(plant => (
-        <li>
+        <li key={plant.id}>
           <PlantCard 
             name={plant.name}
             price={plant.price}
             image={plant.image}
-            key={plant.id}
           />
         </li>
       )):null}
