@@ -1,11 +1,11 @@
-import React,{useState} from "react";
-
+import React,{useState} from "react"
 
 function NewPlantForm({plants, setPlants}) {
   const [newPlant, setNewPlant] = useState({
     name:"",
     image:"",
-    price:0
+    price:0,
+    id:0
   })
   function handleChange(e){
     e.preventDefault()
@@ -23,13 +23,21 @@ function NewPlantForm({plants, setPlants}) {
     fetch('http://localhost:6001/plants',{
       method:"POST",
       headers: {
-        "Content-type": "application/json"
+        "Content-Type": "application/json"
       },
       body:JSON.stringify(newPlant)
     })
     .then(res => res.json())
-    .then(plant => setPlants([...plants,plant]))
+    .then(plant => setPlants([...plants,plant]),
+      setNewPlant({
+        name:"",
+        image:"",
+        price:0,
+        id:0
+      })
+  )
     .catch((err) => console.log(err))
+
   }
 
   return (

@@ -1,8 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import PlantCard from "./PlantCard";
 
+function PlantList({plants,setPlants}) {
 
-function PlantList({plants}) {
   return (
     <ul className="cards">
       {plants.length > 0?plants.map(plant => (
@@ -11,6 +11,9 @@ function PlantList({plants}) {
             name={plant.name}
             price={plant.price}
             image={plant.image}
+            id={plant.id}
+            plants={plants}
+            setPlants={setPlants}
           />
         </li>
       )):null}

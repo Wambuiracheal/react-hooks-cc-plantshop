@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React,{Suspense, useEffect,useState} from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
@@ -14,8 +14,12 @@ function PlantPage() {
   },[])
   return (
     <main>
-      <NewPlantForm />
-      <Search />
+      <NewPlantForm plants = {plants} setPlants = {setPlants}/>
+      {/* <Suspense fallback={Loading...}>
+         
+      </Suspense>
+      */}
+       <Search />
       <PlantList  plants = {plants} setPlants = {setPlants}/>
     </main>
   );
