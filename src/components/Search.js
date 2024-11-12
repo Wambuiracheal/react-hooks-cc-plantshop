@@ -1,7 +1,9 @@
-import React,{Suspense, useState} from "react";
+import React from "react";
 
-function Search() {
-  const[searchPlant, setSearchPlant] = useState('')
+function Search({lookup}) {
+  function handleSearch(e){
+    lookup(e.target.value)
+  }
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
@@ -9,8 +11,7 @@ function Search() {
         type="text"
         id="search"
         placeholder="Type a name to search..."
-        value={searchPlant}
-        onChange={e => setSearchPlant(e.target.value)}
+        onChange={handleSearch}
       />
     </div>
   );

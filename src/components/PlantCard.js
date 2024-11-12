@@ -72,7 +72,7 @@ function PlantCard({id,name,image,price,plants,setPlants}) {
   return (
     <li className="card" data-testid="plant-item">
 
-      <img src={image} alt={name}/>
+      <img src={image} alt={name} title={name}/>
       <h4>{name}</h4>
       <p>Price: ${price}</p>
       <button className={inStock ? "primary" : ""} onClick={handleToggleStock}>

@@ -41,6 +41,12 @@
       "image": "https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg",
       "price": "40",
       "id": 8
+    },
+    {
+      "name": "Lily",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Lilium_candidum_1.jpg/220px-Lilium_candidum_1.jpg",
+      "price": "49",
+      "id": 9
     }
   ]
 }
