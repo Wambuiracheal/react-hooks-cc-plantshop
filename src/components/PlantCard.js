@@ -74,7 +74,7 @@ function PlantCard({id,name,image,price,plants,setPlants}) {
 
       <img src={image} alt={name} title={name}/>
       <h4>{name}</h4>
-      <p>Price: ${price}</p>
+      <p>Price: {price}</p>
       <button className={inStock ? "primary" : ""} onClick={handleToggleStock}>
           {inStock ? "In Stock" : "Out of Stock"}
       </button>
