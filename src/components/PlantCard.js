@@ -26,7 +26,7 @@ function PlantCard({id,name,image,price,plants,setPlants}) {
     })
     .then(res => res.json())
     .then(() => {
-        let remainingPlants = plants.filter(plant => plant.id !== id)
+        let remainingPlants = plants.filter(plante => plante.id !== id)
         setPlants(remainingPlants)
       })
       .catch(err => console.log(err))
@@ -56,13 +56,13 @@ function PlantCard({id,name,image,price,plants,setPlants}) {
     })
     .then((res) => res.json())
     .then(plantsy => {
-      let editedPlant = plants.map(plant => {
-        if(plant.id === id){
-          plant.name = plantsy.name
-          plant.image = plantsy.image
-          plant.price = plantsy.price
+      let editedPlant = plants.map(plantedit => {
+        if(plantedit.id === id){
+          plantedit.name = plantsy.name
+          plantedit.image = plantsy.image
+          plantedit.price = plantsy.price
         }
-        return (plant)
+        return (plantedit)
       })
       setPlants(editedPlant)
     })

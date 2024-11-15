@@ -13,8 +13,9 @@ function PlantPage() {
         setPlants(data)
     })
   },[])
-  const displayPlants = plants.filter((green) =>
-    green.name.toLowerCase().includes(searchPlants.toLowerCase())
+
+  //setting search
+  const displayPlants = plants.filter((green) => green.name.toLowerCase().includes(searchPlants.toLowerCase())
   );
   return (
     <main>

@@ -4,11 +4,10 @@ function NewPlantForm({plants, setPlants}) {
   const [newPlant, setNewPlant] = useState({
     name:"",
     image:"",
-    price:0,
-    id:0
+    price:0
   })
+
   function handleChange(e){
-    e.preventDefault()
     let name = e.target.name
     let value = e.target.value
 
@@ -18,26 +17,25 @@ function NewPlantForm({plants, setPlants}) {
     })
   }
 
-  function handleSubmit(e){
-    e.preventDefault()
-    fetch('http://localhost:6001/plants',{
-      method:"POST",
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("http://localhost:6001/plants", {
+      method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body:JSON.stringify(newPlant)
+      body: JSON.stringify(newPlant),
     })
-    .then(res => res.json())
-    .then(plant => setPlants([...plants,plant]),
-      setNewPlant({
-        name:"",
-        image:"",
-        price:0,
-        id:0
+      .then((res) => res.json())
+      .then((plnt) => {
+        setPlants([...plants, plnt]);
+        setNewPlant({
+          name: "",
+          image: "",
+          price: 0,
+        });
       })
-  )
-    .catch((err) => console.log(err))
-
+      .catch((err) => console.log(err));
   }
 
   return (
